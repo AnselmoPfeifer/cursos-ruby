@@ -11,6 +11,6 @@ day_03
     Conditional
 
 day_04
-    Formatting: capitalize, upcase, downcase, reverse, length
+    Formatting: capitalize, upcase, downcase, reverse, length,
     Count character
     
