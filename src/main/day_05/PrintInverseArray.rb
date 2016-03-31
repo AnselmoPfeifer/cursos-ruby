@@ -17,4 +17,13 @@ class PrintInverseArray
   puts soda_type[-3]
   puts soda_type[-4]
 
+  soda_type = ["Sprite", 6, "mountain dew", 8.333, "orange soda", 7 + 9]
+  puts soda_type
+
+  puts "Your favorite drinks is: "
+  puts soda_type[4] + " tastes delicious!"
+
+  #outras formas de usar
+  puts "Your favorite drinks is: "
+  puts "#{soda_type[4]} +  tastes delicious!"
 end
