@@ -1,4 +1,4 @@
-class ThirdLesson
+class WhileIf
   puts "Give me two numbers and I will tell you the numbers between them that are prime"
   puts "To get started, what is your starting number?"
   num = gets.to_i

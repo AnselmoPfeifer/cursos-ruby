@@ -1,4 +1,4 @@
-class SecondLesson
+class Variable
   #use variable
   #Boolean = True of False
   #Integer = Number

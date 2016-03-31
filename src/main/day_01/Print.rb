@@ -1,4 +1,4 @@
-class FirstLesson
+class Print
   #print value
   print "This is firts line in ruby. "
   puts "This is my second line."
