@@ -1,5 +1,4 @@
-# [Learning Ruby - Teacher: Jake Day Williams](https://www.youtube.com/playlist?list=PLMK2xMz5H5Zv8eC8b4K6tMaE1-Z9FgSOp)
-
+# Learning Ruby 
 day_01
     Impressão
     
@@ -16,3 +15,4 @@ day_04
 day_05
     Array - Impressao normal de um array e impressao inversa
     
+[Learning Ruby - Teacher: Jake Day Williams](https://www.youtube.com/playlist?list=PLMK2xMz5H5Zv8eC8b4K6tMaE1-Z9FgSOp)
