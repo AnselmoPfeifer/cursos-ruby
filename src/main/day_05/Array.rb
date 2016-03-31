@@ -1,4 +1,5 @@
 class Array
+
   rock_booton = "Mary kate Olson Lindsay Lohan Charlie Sheen"
   puts rock_booton
 
@@ -8,7 +9,5 @@ class Array
   puts date[0..4]
   puts date[0...5]
 
-  array_families = ["Braday", "Partridge", "Bunday"]
 
-  puts array_families
 end
