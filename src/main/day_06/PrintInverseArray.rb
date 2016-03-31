@@ -26,4 +26,7 @@ class PrintInverseArray
   #outras formas de usar
   puts "Your favorite drinks is: "
   puts "#{soda_type[4]} +  tastes delicious!"
+
+  #print o tipo da variavel
+  puts array_families.class
 end
