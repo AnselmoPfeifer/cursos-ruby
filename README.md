@@ -24,6 +24,9 @@ dia_07:
 dia_08:
     Entrada de dados
     Impresao de dados com capitalize, upcase, downcase, reverse
+
+dia_09: 
+    Mais sobre hash e impressao de hash
     
     
 [Jake Day Williams](https://www.youtube.com/playlist?list=PLMK2xMz5H5Zv8eC8b4K6tMaE1-Z9FgSOp)
