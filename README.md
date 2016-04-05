@@ -1,20 +1,18 @@
-# [Learning Ruby - Teacher: Jake Day Williams](https://www.youtube.com/playlist?list=PLMK2xMz5H5Zv8eC8b4K6tMaE1-Z9FgSOp)
-
+# Learning Ruby 
 day_01
-    print e puts
+    Impressão
     
 day_02
-    if e while
-    Arithmetic Operators
+    Operadores e if, while
+    
     
 day_03
     Condições
 
 day_04
-    Capitalize, upcase, downcase, reverse, length,
-    Count character
+    Contar caracteres num texto, Capitalize, upcase, downcase, reverse, length, 
     
 day_05
-    Array 
-    Impressao normal de um array e impressao inversa
+    Array - Impressao normal de um array e impressao inversa
     
+[Jake Day Williams](https://www.youtube.com/playlist?list=PLMK2xMz5H5Zv8eC8b4K6tMaE1-Z9FgSOp)
