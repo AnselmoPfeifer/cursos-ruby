@@ -30,6 +30,7 @@ dia_09:
 
 dia_10:
     Inicio de funçoes
+    Do singular ao plural
 
 dia_11:
     Impressao e contagem de itens
