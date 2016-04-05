@@ -22,14 +22,14 @@ dia_07:
     Hash
 
 dia_08:
-    Entrada de dados
+    Entrada de dados, 
     Impresao de dados com capitalize, upcase, downcase, reverse
 
 dia_09: 
     Mais sobre hash e impressao de hash
 
 dia_10:
-    Inicio de funçoes
+    Inicio de funçoes, 
     Do singular ao plural
 
 dia_11:
