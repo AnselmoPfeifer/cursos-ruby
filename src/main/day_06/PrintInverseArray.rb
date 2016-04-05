@@ -29,4 +29,9 @@ class PrintInverseArray
 
   #print o tipo da variavel
   puts array_families.class
+
+  idade = 27
+  multiplicador = 2
+  puts idade * multiplicador
+
 end
