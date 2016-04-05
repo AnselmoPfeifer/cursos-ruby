@@ -1,18 +1,29 @@
 # Learning Ruby 
-day_01
+dia_01
     Impressão
     
-day_02
+dia_02
     Operadores e if, while
     
     
-day_03
+dia_03
     Condições
 
-day_04
+dia_04
     Contar caracteres num texto, Capitalize, upcase, downcase, reverse, length, 
     
-day_05
+dia_05
     Array - Impressao normal de um array e impressao inversa
+
+dia_06
+    Impressao de array na sequencia, e na ordem irversa.
+
+dia_07
+    Hash
+
+dia_08
+    Entrada de dados
+    Impresao de dados com capitalize, upcase, downcase, reverse
+    
     
 [Jake Day Williams](https://www.youtube.com/playlist?list=PLMK2xMz5H5Zv8eC8b4K6tMaE1-Z9FgSOp)
