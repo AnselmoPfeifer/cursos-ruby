@@ -9,6 +9,4 @@ class Hash
   puts hash_brown ["topping_2"]
   puts hash_brown ["topping_3"]
 
-
-
 end

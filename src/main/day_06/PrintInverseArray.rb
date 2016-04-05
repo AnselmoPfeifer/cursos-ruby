@@ -2,7 +2,6 @@ class PrintInverseArray
   array_families = ["Braday", "Partridge", "Bunday"]
   soda_type = ["Sprite","coke","mountain dew", "orange soda"]
 
-  #print o array de familias
   puts array_families
 
   #print o array de familias na sequencia

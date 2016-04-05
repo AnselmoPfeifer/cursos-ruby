@@ -1,4 +1,5 @@
 class Name
+
   print "First name? "
   first_name = gets.chomp
 
