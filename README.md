@@ -27,6 +27,13 @@ dia_08:
 
 dia_09: 
     Mais sobre hash e impressao de hash
+
+dia_10:
+    Inicio de funçoes
+
+dia_11:
+    Impressao e contagem de itens
+    
     
     
 [Jake Day Williams](https://www.youtube.com/playlist?list=PLMK2xMz5H5Zv8eC8b4K6tMaE1-Z9FgSOp)
