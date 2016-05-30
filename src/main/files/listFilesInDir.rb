@@ -15,3 +15,7 @@ Dir.glob(buscar_por).each do |arquivos|
 
   puts "#{tamanho} Mb"
 end
+
+# A impressao sera algo assim
+# /Users/anselmo/Documents/Desenvolvimento/workspace/java/jdk-8u65-linux-x64.tar.gz
+# 172.86 Mb
