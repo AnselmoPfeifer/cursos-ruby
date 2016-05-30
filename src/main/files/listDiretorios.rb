@@ -8,9 +8,10 @@ onde_estou = Dir.pwd
 
 puts "A lista no direorios é: "
 
-Dir.foreach(diretory)do | file |
-  puts file
+Dir.foreach(diretory)do | content |
+  puts content
 end
+
 
 puts onde_estou
 puts dir_current
