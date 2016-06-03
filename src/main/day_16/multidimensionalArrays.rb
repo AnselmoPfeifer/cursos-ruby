@@ -13,4 +13,6 @@ string_arrays.each { |x| puts x }
 
 puts "\nPrint first character"
 string_arrays.each { |x| x.each { |y| puts y[0] }}
+puts "\nPrint second character"
+string_arrays.each { |x| x.each { |y| puts y[1] }}
 

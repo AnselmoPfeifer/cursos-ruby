@@ -33,8 +33,22 @@ dia_10:
     Do singular ao plural
 
 dia_11:
-    Impressao e contagem de itens
-    
+    Impressao e contagem de itens com For
+
+dia_12:
+    Funçoes com Numeros
+
+dia_13:
+    Calculo de Área e Hipotenuza
+
+dia_14:
+    Loop,while
+
+dia_15
+    Find, Read, File
+
+dia_16
+    multiplos array
     
     
 [Jake Day Williams](https://www.youtube.com/playlist?list=PLMK2xMz5H5Zv8eC8b4K6tMaE1-Z9FgSOp)
