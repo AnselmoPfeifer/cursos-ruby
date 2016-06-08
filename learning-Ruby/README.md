@@ -49,6 +49,13 @@ dia_15
 
 dia_16
     multiplos array
-    
+
+dia_17
+    Buscar numeros primos numa lista grande
+
+dia _18
+    Imprime numero de palavras num texto e ordena
+
+
     
 [Jake Day Williams](https://www.youtube.com/playlist?list=PLMK2xMz5H5Zv8eC8b4K6tMaE1-Z9FgSOp)
