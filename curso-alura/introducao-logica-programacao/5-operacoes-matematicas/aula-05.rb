@@ -48,7 +48,7 @@ chutes = []
 for contagem in 1..limite_tentativas
   chute = pede_um_numero chutes, contagem, limite_tentativas
   chutes << chute
-  pontos_a_perder = (chute - numero_secreto) /2.0
+  pontos_a_perder = (chute - numero_secreto).abs / 2.0
   pontos_ate_agora -= pontos_a_perder
 
   if verifica_se_acertou numero_secreto, chute
