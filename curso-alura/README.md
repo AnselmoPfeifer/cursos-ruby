@@ -8,6 +8,7 @@ Aula 02
 
 Aula 03 
     O poder da extração de código,
+    
 Aula 04
     Trabalhando com arrays, metodos e funções.
     Quando temos uma função dentro de um valor chamamos de metodo, senão chamamos de função.
