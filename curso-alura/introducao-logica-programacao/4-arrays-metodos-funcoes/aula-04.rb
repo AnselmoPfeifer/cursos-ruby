@@ -41,7 +41,7 @@ end
 
 dar_boas_vindas
 numero_secreto = sorteia_numero_secreto
-limite_tentativas = 2
+limite_tentativas = 5
 chutes = []
 total_chutes = 0
 
