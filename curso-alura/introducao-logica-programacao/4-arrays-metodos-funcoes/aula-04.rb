@@ -43,12 +43,11 @@ dar_boas_vindas
 numero_secreto = sorteia_numero_secreto
 limite_tentativas = 5
 chutes = []
-total_chutes = 0
 
 for contagem in 1..limite_tentativas
   chute = pede_um_numero chutes, contagem, limite_tentativas
-  chutes[total_chutes] = chute
-  total_chutes += 1
+  chutes[chutes.size] = chute
+
   if verifica_se_acertou numero_secreto, chute
     break
   end
