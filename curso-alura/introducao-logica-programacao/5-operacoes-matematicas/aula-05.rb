@@ -9,7 +9,7 @@ end
 
 def sorteia_numero_secreto
   puts "Escolhendo um numero secreto entre 0 e 200"
-  sorteado = 175
+  sorteado = rand(200)
   puts "Que tal adivinhar nosso numero secreto!"
   sorteado
 end
@@ -42,7 +42,7 @@ end
 dar_boas_vindas
 numero_secreto = sorteia_numero_secreto
 pontos_ate_agora = 1000
-limite_tentativas = 2
+limite_tentativas = 10
 chutes = []
 
 for contagem in 1..limite_tentativas
@@ -56,3 +56,4 @@ for contagem in 1..limite_tentativas
   end
 end
 puts "Voce ganhou pontos ate agora #{pontos_ate_agora} pontos"
+puts "O numero sorteado foi: #{numero_secreto}"
