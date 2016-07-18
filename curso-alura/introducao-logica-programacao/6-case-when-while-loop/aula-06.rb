@@ -16,15 +16,16 @@ def sorteia_numero_secreto(dificuldade)
   case dificuldade
     when 1
       maximo = 30
-      tentativa = 3
     when 2
       maximo = 60
     when 3
       maximo = 100
     when 4
       maximo = 150
-    else
+    when 5
       maximo = 200
+    else
+      maximo = 250
   end
   if dificuldade == 1
     maxino = 30
