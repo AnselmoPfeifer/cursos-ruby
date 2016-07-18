@@ -47,7 +47,7 @@ total_chutes = 0
 
 for contagem in 1..limite_tentativas
   chute = pede_um_numero chutes, contagem, limite_tentativas
-  chutes[chutes.size] = chute
+  chutes[total_chutes] = chute
   total_chutes += 1
   if verifica_se_acertou numero_secreto, chute
     break
