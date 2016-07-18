@@ -16,6 +16,7 @@
         - to_s = metodo de uma string
         - to_i = metodo de um inteiro
         - size = metodo de um array
-        - strip = metodo de ums string
-        - slip = metodo de uma string
+        - strip = metodo de uma string (elimina espacos em branco antes e depois da string)
+        - slip = metodo de uma string (corta uma string em partes ex: <text>.slip"."
+        - rand = metodo de inteiros
     - Para ver todos os metodos de uma string/inteiro <string>.methods
