@@ -90,8 +90,11 @@ end
 nome = dar_boas_vindas
 dificuldade = pede_dificuldade
 
-while quer_jogar
+loop  do
   joga nome, dificuldade
+  if !quer_jogar
+    break
+  end
 end
 
 
