@@ -1,15 +1,15 @@
 # Introducao a programacao com ruby e jogos
 
-Aula 01 
+- Aula 01 
     Entrada, Saida, Strings e números.
 
-Aula 02
+- Aula 02
     Condicionais, laços, programação imperativa.
 
-Aula 03 
+- Aula 03 
     O poder da extração de código,
     
-Aula 04
+- Aula 04
     Trabalhando com arrays, metodos e funções.
     Quando temos uma função dentro de um valor chamamos de metodo, senão chamamos de função.
     Exemplo: 
