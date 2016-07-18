@@ -12,25 +12,25 @@ def pede_dificuldade
   dificuldade = gets.to_i
 end
 def sorteia_numero_secreto(dificuldade)
+
+  case dificuldade
+    when 1
+      maximo = 30
+      tentativa = 3
+    when 2
+      maximo = 60
+    when 3
+      maximo = 100
+    when 4
+      maximo = 150
+    else
+      maximo = 200
+  end
   if dificuldade == 1
     maxino = 30
   else
-    if dificuldade == 2
-      maxino = 60
-    else
-      if dificuldade == 3
-      maxino = 100
-      else
-        if dificuldade == 4
-          maxino = 150
-        else
-          maxino = 200
-        end
-      end
-    end
 
   end
-
   puts "Escolhendo um numero secreto entre 0 e #{maxino - 1}"
   sorteado = rand(maxino)
   puts "Que tal adivinhar nosso numero secreto!"
@@ -67,7 +67,7 @@ dificuldade = pede_dificuldade
 numero_secreto = sorteia_numero_secreto(dificuldade)
 
 pontos_ate_agora = 1000
-limite_tentativas = 10
+limite_tentativas = 5
 chutes = []
 
 for contagem in 1..limite_tentativas
