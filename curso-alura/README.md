@@ -20,3 +20,12 @@
         - slip = metodo de uma string (corta uma string em partes ex: <text>.slip"."
         - rand = metodo de inteiros
     - Para ver todos os metodos de uma string/inteiro <string>.methods
+
+- Aula 05 
+    - Operações matemáticas, 
+    - Sistemas decimais e hexadecimais
+    
+- Aula 06
+    - Case when, 
+    - While , 
+    - Loop do

@@ -1,6 +1,14 @@
 #!/usr/bin/env ruby
 def dar_boas_vindas
-  puts "Bem vindo ao curso de Adivinhação"
+  puts
+  puts "        P  /_\  P                              "
+  puts "       /_\_|_|_/_\                             "
+  puts "   n_n | ||. .|| | n_n         Bem vindo ao    "
+  puts "   |_|_|nnnn nnnn|_|_|     Jogo de Adivinhação!"
+  puts "  |' '  |  |_|  |'  ' |                        "
+  puts "  |_____| ' _ ' |_____|                        "
+  puts "        \__|_|__/                              "
+  puts
   puts "Qual é seu nome?"
   nome = gets.strip
   puts "Começaremos o jogo com você #{nome}"
@@ -8,7 +16,9 @@ def dar_boas_vindas
 end
 
 def pede_dificuldade
-  puts "Qual o nivel de dificuldade que deseja? ( 1 Fácil... 5 Dificil )"
+  puts "Qual o nível de dificuldade?"
+  puts "(1) Muito fácil (2) Fácil (3) Normal (4) Difícil (5) Impossível"
+  puts "Escolha: "
   dificuldade = gets.to_i
 end
 
@@ -44,7 +54,7 @@ def verifica_se_acertou(numero_secreto, chute)
   acertou = numero_secreto == chute
 
   if acertou
-    puts "#{nome} você acertou. Parabens!"
+    ganhou
     return true
   end
 
@@ -57,6 +67,27 @@ def verifica_se_acertou(numero_secreto, chute)
   false
 end
 
+def ganhou
+  puts
+  puts "             OOOOOOOOOOO               "
+  puts "         OOOOOOOOOOOOOOOOOOO           "
+  puts "      OOOOOO  OOOOOOOOO  OOOOOO        "
+  puts "    OOOOOO      OOOOO      OOOOOO      "
+  puts "  OOOOOOOO  #   OOOOO  #   OOOOOOOO    "
+  puts " OOOOOOOOOO    OOOOOOO    OOOOOOOOOO   "
+  puts "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO  "
+  puts "OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO  "
+  puts "OOOO  OOOOOOOOOOOOOOOOOOOOOOOOO  OOOO  "
+  puts " OOOO  OOOOOOOOOOOOOOOOOOOOOOO  OOOO   "
+  puts "  OOOO   OOOOOOOOOOOOOOOOOOOO  OOOO    "
+  puts "    OOOOO   OOOOOOOOOOOOOOO   OOOO     "
+  puts "      OOOOOO   OOOOOOOOO   OOOOOO      "
+  puts "         OOOOOO         OOOOOO         "
+  puts "             OOOOOOOOOOOO              "
+  puts
+  puts "               Acertou!                "
+  puts
+end
 def joga(nome, dificuldade)
   numero_secreto = sorteia_numero_secreto(dificuldade)
   pontos_ate_agora = 1000
@@ -67,7 +98,7 @@ def joga(nome, dificuldade)
     chutes << chute
 
     if nome == 'Anselmo'
-      puts "#{nome} você acertou. Parabens!"
+      ganhou
       break
     end
 
@@ -79,22 +110,23 @@ def joga(nome, dificuldade)
     end
   end
   puts "#{nome} ganhou pontos ate agora #{pontos_ate_agora} pontos"
-  puts "O numero sorteado foi: #{numero_secreto}"
+  unless nome == 'Anselmo'
+    puts "O numero sorteado foi: #{numero_secreto}"
+  end
 end
 
-def quer_jogar
+def nao_quer_jogar?
   puts "Deseja jogar novamente? (S,N)"
   quero_jogar = gets.strip
-  quero_jogar.upcase == "S"
+  nao_quero_jogar = quero_jogar.upcase == "N"
 end
+
 nome = dar_boas_vindas
 dificuldade = pede_dificuldade
 
 loop  do
   joga nome, dificuldade
-  if !quer_jogar
+  if nao_quer_jogar?
     break
   end
 end
-
-
