@@ -36,7 +36,7 @@ def sorteia_numero_secreto(dificuldade)
       maximo = 200
   end
 
-  puts "Escolhendo um numero secreto entre 0 e #{maximo - 1}"
+  puts "Escolhendo um numero secreto entre 1 e #{maximo}"
   sorteado = rand(maximo)
   puts "Que tal adivinhar nosso numero secreto!"
   sorteado
@@ -88,6 +88,7 @@ def ganhou
   puts "               Acertou!                "
   puts
 end
+
 def joga(nome, dificuldade)
   numero_secreto = sorteia_numero_secreto(dificuldade)
   pontos_ate_agora = 1000
