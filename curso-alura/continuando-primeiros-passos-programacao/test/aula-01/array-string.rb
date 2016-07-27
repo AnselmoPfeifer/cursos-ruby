@@ -1,7 +1,7 @@
 #Recebe uma palavra
 palavra = gets.strip
 
-#Conta a Quantida de Letras
+#Conta a Quantidade de Letras
 puts "Quantidade de letras #{palavra.size}"
 
 letra = gets.strip
