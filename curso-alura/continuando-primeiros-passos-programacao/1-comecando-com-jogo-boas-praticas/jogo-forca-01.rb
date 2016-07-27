@@ -58,13 +58,12 @@ def joga(nome)
           total_encrontrada += 1
         end
       end
-      if total_encrontrado != 0
-        puts "Letra encontrada #{total_encrontrado} vezes."
-      else
+      if total_encrontrado == 0
         puts "Letra nao encontrada."
         erros += 1
+      else
+        puts "Letra encontrada #{total_encrontrado} vezes."
       end
-
     else
       acertou = chute == palavra_secreta
       if acertou
