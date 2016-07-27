@@ -38,6 +38,17 @@ def pede_um_chute(chutes, erros)
   chute
 end
 
+def conta (texto, letra)
+  total_encrontrado = 0
+  texto.chars
+  for caractere in texto.chars
+    if caractere == letra
+      total_encrontrado += 1
+    end
+  end
+  total_encrontrado
+end
+
 def joga(nome)
   palavra_secreta = sorteia_palavra_secreta
   erros = 0
@@ -52,12 +63,8 @@ def joga(nome)
 
     if chutou_uma_letra
       letra_procurada = chute[0]
-      total_encrontrado = 0
-      for i in 0..(palavra_secreta.size-1)
-        if palavra_secreta[i] == letra_procurada
-          total_encrontrada += 1
-        end
-      end
+
+      total_encrontrado = conta palavra_secreta, letra_procurada
       if total_encrontrado == 0
         puts "Letra nao encontrada."
         erros += 1
