@@ -49,6 +49,7 @@ def joga(nome)
     chutes << chute
 
     chutou_uma_letra = chute.size == 1
+
     if chutou_uma_letra
       letra_procurada = chute[0]
       total_encrontrado = 0
