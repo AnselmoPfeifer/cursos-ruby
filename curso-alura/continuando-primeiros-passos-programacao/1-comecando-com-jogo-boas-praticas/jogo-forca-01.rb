@@ -50,6 +50,20 @@ def joga(nome)
 
     chutou_uma_letra = chute.size == 1
     if chutou_uma_letra
+      letra_procurada = chute[0]
+      total_encrontrado = 0
+      for i in 0..(palavra_secreta.size-1)
+        if palavra_secreta[i] == letra_procurada
+          total_encrontrada += 1
+        end
+      end
+      if total_encrontrado != 0
+        puts "Letra encontrada #{total_encrontrado} vezes."
+      else
+        puts "Letra nao encontrada."
+        erros += 1
+      end
+
     else
       acertou = chute == palavra_secreta
       if acertou
