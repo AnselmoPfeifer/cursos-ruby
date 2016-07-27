@@ -17,7 +17,7 @@ end
 
 def sorteia_palavra_secreta
   puts "Escolhendo uma palavra...Aguarde..."
-  palavra_secreta = "programador"
+  palavra_secreta = "Programador"
   puts "Escolhida uma palavra com #{palavra_secreta.size} letras... boa sorte!"
   palavra_secreta
 end
@@ -28,31 +28,42 @@ def nao_quer_jogar?
   nao_quero_jogar = quero_jogar.upcase == "N"
 end
 
-def pede_um_chute(erros)
-  puts "\n"
+def pede_um_chute(chutes, erros)
+  puts "\n\n"
   puts "Erros ate agora: #{erros}"
   puts "Chutes ate agora: #{chutes}"
   puts "Entre com uma palavra ou letra"
   chute = gets.strip
   puts "Será que acertou? você chutou #{chute}"
   chute
-
 end
 
 def joga(nome)
-  oportunidade = 5
   palavra_secreta = sorteia_palavra_secreta
-  erros = oportunidade
+  erros = 0
   chutes = []
   pontos_ate_agora = 0
 
-  while erros < oportunidade
-    chute = pede_um_chute(chute)
+  while erros < 5
+    chute = pede_um_chute chutes, erros
     chutes << chute
 
-    #Verifica se acertou
-  end
+    chutou_uma_letra = chute.size == 1
+    if chutou_uma_letra
+    else
+      acertou = chute == palavra_secreta
+      if acertou
+        puts "Parabens! Você Acertou!"
+        pontos_ate_agora += 100
+        break
+      else
+        puts "Que pena você errou!"
+        pontos_ate_agora -=30
+        erros +=1
 
+      end
+    end
+  end
   puts "Você ganhou #{pontos_ate_agora} pontos."
 end
 
