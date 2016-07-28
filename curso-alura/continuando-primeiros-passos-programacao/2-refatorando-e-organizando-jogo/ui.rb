@@ -1,4 +1,28 @@
 #!/usr/bin/env ruby
+def avisa_chute_efetuado (chute)
+  puts "Você ja chutou '#{chute}'"
+end
+
+def avisa_letra_nao_encontrada
+  puts "Letra nao encontrada."
+end
+
+def avisa_letra_encontrada (total_encrontrado)
+  puts "Letra encontrada #{total_encrontrado} vezes."
+end
+
+def avisa_acertou_palavra
+  puts "Parabens! Você Acertou a palavra!"
+end
+
+def avisa_errou_palavra
+  puts "Que pena você errou!"
+end
+
+def avisa_pontos(pontos_ate_agora)
+  puts "Você ganhou #{pontos_ate_agora} pontos."
+end
+
 def dar_boas_vindas
   puts
   puts "        P  /_\  P                              "
@@ -36,54 +60,4 @@ def pede_um_chute(chutes, erros)
   chute = gets.strip
   puts "Será que acertou? você chutou #{chute}"
   chute
-end
-
-def joga(nome)
-  palavra_secreta = sorteia_palavra_secreta
-  erros = 0
-  chutes = []
-  pontos_ate_agora = 0
-
-  while erros < 5
-    chute = pede_um_chute chutes, erros
-    if chutes.include? chute
-      puts "Você ja chutou '#{chute}'"
-      next
-    end
-    chutes << chute
-
-    chutou_uma_letra = chute.size == 1
-
-    if chutou_uma_letra
-      letra_procurada = chute[0]
-
-      total_encrontrado = palavra_secreta.count letra_procurada
-      if total_encrontrado == 0
-        puts "Letra nao encontrada."
-        erros += 1
-      else
-        puts "Letra encontrada #{total_encrontrado} vezes."
-      end
-    else
-      acertou = chute == palavra_secreta
-      if acertou
-        puts "Parabens! Você Acertou!"
-        pontos_ate_agora += 100
-        break
-      else
-        puts "Que pena você errou!"
-        pontos_ate_agora -=30
-        erros +=1
-
-      end
-    end
-  end
-  puts "Você ganhou #{pontos_ate_agora} pontos."
-end
-
-nome = dar_boas_vindas
-
-loop do
-  joga nome
-  break if nao_quer_jogar?
 end
