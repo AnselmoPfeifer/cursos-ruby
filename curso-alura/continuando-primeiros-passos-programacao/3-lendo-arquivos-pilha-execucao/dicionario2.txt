@@ -1,0 +1,4 @@
+dicionario
+casa
+robo
+programador
