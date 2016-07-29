@@ -21,7 +21,20 @@ def avisa_letra_encontrada (total_encrontrado)
 end
 
 def avisa_acertou_palavra
-  puts "Parabens! Você Acertou a palavra!"
+  puts "\nParabéns, você ganhou!"
+  puts
+
+  puts "       ___________      "
+  puts "      '._==_==_=_.'     "
+  puts "      .-\\:      /-.    "
+  puts "     | (|:.     |) |    "
+  puts "      '-|:.     |-'     "
+  puts "        \\::.    /      "
+  puts "         '::. .'        "
+  puts "           ) (          "
+  puts "         _.' '._        "
+  puts "        '-------'       "
+  puts
 end
 
 def avisa_errou_palavra
@@ -34,18 +47,44 @@ end
 
 def dar_boas_vindas
   puts
-  puts "        P  /_\  P                              "
-  puts "       /_\_|_|_/_\                             "
-  puts "   n_n | ||. .|| | n_n         Bem vindo ao    "
-  puts "   |_|_|nnnn nnnn|_|_|     Jogo de Adivinhação!"
-  puts "  |' '  |  |_|  |'  ' |                        "
-  puts "  |_____| ' _ ' |_____|                        "
-  puts "        \__|_|__/                              "
-  puts
+  puts "/##############################################/"
+  puts "/                   JOGO DA FORCA              /"
+  puts "/##############################################/"
   puts "Qual é seu nome?"
   nome = gets.strip
   puts "Começaremos o jogo com você #{nome}"
   nome
+end
+
+def desenha_forca(erros)
+  cabeca = "   "
+  corpo = " "
+  pernas = "   "
+  bracos = "   "
+  if erros >= 1
+    cabeca = "(_)"
+  end
+  if erros >= 2
+    bracos = " | "
+    corpo = "|"
+  end
+  if erros >= 3
+    bracos = "\\|/"
+  end
+  if erros >= 4
+    pernas = "/ \\"
+  end
+
+  puts "  _______       "
+  puts " |/      |      "
+  puts " |      #{cabeca}  "
+  puts " |      #{bracos}  "
+  puts " |       #{corpo}     "
+  puts " |      #{pernas}   "
+  puts " |              "
+  puts "_|___           "
+  puts
+
 end
 
 def avisa_escolhendo_palavra
@@ -65,6 +104,7 @@ end
 
 def cabecalho_tentativa(chutes, erros, mascara)
   puts "\n\n"
+  desenha_forca(erros)
   puts "palavra secreta eh a #{mascara}"
   puts "Erros ate agora: #{erros}"
   puts "Chutes ate agora: #{chutes}"
