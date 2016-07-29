@@ -1,6 +1,15 @@
 #!/usr/bin/env ruby
+
+def avisa_campeao_atual (dados)
+  puts "Nosso campeao atual eh : #{dados[0]} com #{dados[1]} pontos!"
+end
+
 def avisa_chute_efetuado (chute)
   puts "Você ja chutou '#{chute}'"
+end
+
+def avisa_pontos_totais (pontos_totais)
+  puts "Voce possui #{pontos_totais} pontos"
 end
 
 def avisa_letra_nao_encontrada

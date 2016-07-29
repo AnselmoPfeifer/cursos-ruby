@@ -1,3 +1,4 @@
-Dicionario
-Software
-Hardware
+dicionario
+hardware
+dicionariohardware
+hardwaredicionario

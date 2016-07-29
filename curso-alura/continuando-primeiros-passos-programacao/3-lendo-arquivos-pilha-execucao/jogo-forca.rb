@@ -1,20 +1,22 @@
 #!/usr/bin/env ruby
 require_relative 'ui'
+require_relative 'rank'
 
-# def sorteia_palavra_secreta
-#   avisa_escolhendo_palavra
-#   texto = File.read("dicionario2.txt")
-#   todas_as_palavras = texto.split("\n")
-#   numero_escolhido = rand(todas_as_palavras.size)
-#   palavra_secreta = todas_as_palavras[numero_escolhido].downcase
-#   avisa_palavra_escolhida palavra_secreta
-# end
+def sorteia_palavra_secreta
+  avisa_escolhendo_palavra
+  texto = File.read("dicionario2.txt")
+  todas_as_palavras = texto.split("\n")
+  numero_escolhido = rand(todas_as_palavras.size)
+  palavra_secreta = todas_as_palavras[numero_escolhido].downcase
+  avisa_palavra_escolhida palavra_secreta
+end
 
 def sorteia_palavra_secreta_sem_consumir_memoria
   avisa_escolhendo_palavra
   arquivo = File.new("dicionario2.txt")
   quantidade_de_palavras = arquivo.gets.to_i
   numero_escolhido = rand(quantidade_de_palavras)
+
   for linha in 1..(numero_escolhido-1)
     arquivo.gets
   end
@@ -48,7 +50,7 @@ def pede_um_chute_valido(chutes, erros, mascara)
 end
 
 def joga(nome)
-  palavra_secreta = sorteia_palavra_secreta_sem_consumir_memoria
+  palavra_secreta = sorteia_palavra_secreta
   erros = 0
   chutes = []
   pontos_ate_agora = 0
@@ -87,13 +89,23 @@ def joga(nome)
   end
 
   avisa_pontos(pontos_ate_agora)
-  end
+  pontos_ate_agora
+
+end
 
 def jogo_da_forca
   nome = dar_boas_vindas
+  pontos_totais = 0
+  avisa_campeao_atual le_rank
 
   loop do
-    joga nome
+    pontos_totais += joga nome
+    avisa_pontos_totais pontos_totais
+
+    if le_rank[1].to_i < pontos_totais
+      salvar_rank nome, pontos_totais
+    end
+
     break if nao_quer_jogar?
   end
 
