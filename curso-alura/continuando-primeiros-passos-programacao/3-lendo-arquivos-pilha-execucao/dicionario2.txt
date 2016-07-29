@@ -1,4 +1,3 @@
 Dicionario
-Casa
-Robo
-Programador
+Software
+Hardware
