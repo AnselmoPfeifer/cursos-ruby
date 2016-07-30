@@ -16,5 +16,5 @@ end
 def pede_movimento
   puts "Para onde deseja ir?"
   puts "User as teclas 'A = esquerda, W = Sobe, D = Direita, Z Baixo'"
-  movimento = gets.strip.upcase
+  movimento = gets.strip
 end
