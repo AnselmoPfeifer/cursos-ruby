@@ -1,4 +1,5 @@
 # Curso Ruby I: Introdução a lógica de programação com jogos
+        - Criando jogo DA ADIVINHAÇAO
 
 - Aula 01 
     - Entrada, Saida, Strings e números.
