@@ -1,3 +1,3 @@
-require_relative  'foge-forge'
+require_relative 'foge-foge'
 
 inicia_jogo
