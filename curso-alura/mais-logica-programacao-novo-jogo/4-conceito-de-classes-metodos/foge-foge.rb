@@ -1,4 +1,5 @@
 require_relative  'ui'
+require_relative 'heroi'
 
 def le_mapa(numero)
   arquivo = "mapa#{numero}.txt"
@@ -25,7 +26,10 @@ def encontra_jogador(mapa)
   mapa.each_with_index do |linha_atual, linha|
     coluna_do_heroi = linha_atual.index caracter_do_heroi
     if coluna_do_heroi
-      return [linha, coluna_do_heroi]
+      heroi = Heroi.new
+      heroi.linha = linha
+      heroi.coluna = coluna_do_heroi
+      return heroi
     end
   end
   nil
