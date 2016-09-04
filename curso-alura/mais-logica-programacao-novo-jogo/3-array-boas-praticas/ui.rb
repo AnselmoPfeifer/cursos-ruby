@@ -21,6 +21,6 @@ end
 
 def game_over
   puts "##################################"
-  puts "Game Over"
+  puts "         Game Over                "
   puts "##################################"
 end
