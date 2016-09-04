@@ -1,5 +1,5 @@
 def pega_nome
-  nil
+  "teste"
 end
 
 nome = pega_nome

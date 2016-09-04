@@ -1,5 +1,7 @@
 require_relative  'ui'
 
+https://github.com/alura-cursos/introducao-a-computacao-da-logica-aos-jogos-com-ruby/tree/master/capitulo16
+
 def le_mapa(numero)
   arquivo = "mapa-#{numero}.txt"
   texto = File.read arquivo
