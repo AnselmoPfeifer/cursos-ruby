@@ -1,4 +1,4 @@
-require_relative  'ui'
+require_relative 'ui'
 require_relative 'heroi'
 
 def le_mapa(numero)
@@ -127,13 +127,13 @@ def joga(nome)
     direcao = pede_movimento
 
     heroi = encontra_jogador mapa
-    nova_posicao = calcula_nova_posicao heroi, direcao
-    if !posicao_valida? mapa, nova_posicao
+    nova_posicao = heroi.calcula_nova_posicao direcao
+    if !posicao_valida? mapa, nova_posicao.to_array
       next
     end
 
-    mapa[heroi[0]][heroi[1]] = " "
-    mapa[nova_posicao[0]][nova_posicao[1]] = "H"
+    heroi.remove_do mapa
+    nova_posicao.coloca_no mapa
 
     mapa = move_fantasmas mapa
     if jogador_perdeu?(mapa)
@@ -143,7 +143,7 @@ def joga(nome)
   end
 end
 
-def inicia_foge_foge
+def inicia_fogefoge
   nome = da_boas_vindas
   joga nome
 end

@@ -11,7 +11,6 @@ end
 
 def pede_movimento
   puts "Para onde deseja ir?"
-  puts "User as teclas 'A = esquerda, W = Sobe, D = Direita, Z Baixo'"
   movimento = gets.strip
 end
 
@@ -21,6 +20,6 @@ end
 
 def game_over
   puts "##################################"
-  puts "Game Over"
+  puts "           Game Over              "
   puts "##################################"
 end
