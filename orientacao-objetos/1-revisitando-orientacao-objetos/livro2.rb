@@ -13,7 +13,6 @@ agile = Livro.new("Agile Web Development with Rails", 100.00, 1999)
 
 livros = [livro_ruby, livro_ruby_rails, agile]
 
-
 def imprime_nota_fiscal(livros)
   puts "Nota Fiscal"
   livros.each do | livro |
@@ -47,6 +46,7 @@ def livros_para_new_letter(livros)
 end
 
 # imprime_nota_fiscal livros
-livros_para_new_letter livros
-
+#
 # descontos livros
+
+livros_para_new_letter livros
