@@ -2,7 +2,7 @@ class Livro
   attr_accessor :titulo, :preco, :ano_lancamento
 end
 
-livro_ruby = Livro.new
+livro_ruby = Livro.new()
 livro_ruby.titulo = "Programacao OO em Ruby"
 livro_ruby.preco = 70
 livro_ruby.ano_lancamento = 2010
