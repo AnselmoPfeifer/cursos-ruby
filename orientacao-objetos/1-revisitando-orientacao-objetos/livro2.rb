@@ -7,10 +7,15 @@ class Livro
   end
 end
 
-livro_ruby = Livro.new("Programacao OO em Ruby", 70, 2009)
+livro_ruby = Livro.new("Programacao O O em Ruby", 70, 2000)
 livro_ruby_rails = Livro.new("Programacao Agil com Ruby on Rails", 90, 2013)
+agile = Livro.new("Agile Web Development with Rails", 100.00, 1999)
+
+livros = [livro_ruby, livro_ruby_rails, agile]
+
 
 def imprime_nota_fiscal(livros)
+  puts "Nota Fiscal"
   livros.each do | livro |
     puts "Titulo: #{livro.titulo}"
     puts "Valor: #{livro.preco}"
@@ -19,10 +24,20 @@ def imprime_nota_fiscal(livros)
   end
 end
 
+def descontos(livros)
+  livros.each do | livro |
+    if livro.ano_lancamento < 2000
+      livro.preco = livro.preco * 0.7
+    end
+  end
+end
+
 def livros_para_new_letter(livros)
+  descontos livros
+  puts "Livros para New Letter"
   livros.each do | livro |
     if livro.ano_lancamento < 2010
-      puts "Livros para News Letter"
+      puts "Titulo: #{livro.titulo}"
       puts "Valor: #{livro.preco}"
       puts "Ano Lancamento: #{livro.ano_lancamento}"
       puts ".........................."
@@ -31,8 +46,7 @@ def livros_para_new_letter(livros)
 
 end
 
-livros = [livro_ruby, livro_ruby_rails]
-
-#imprime_nota_fiscal livros
-
+# imprime_nota_fiscal livros
 livros_para_new_letter livros
+
+# descontos livros
