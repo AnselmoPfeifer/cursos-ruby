@@ -61,7 +61,7 @@ class Estoque
 end
 
 livro_ruby = Livro.new("Programacao O O em Ruby", 70, 2000, true)
-livro_arquitetura_software= Livro.new("Arquitetura de software", 70, 2000, true)
+livro_arquitetura_software= Livro.new("Introdução À Arquitetura e Design de Software", 70.00, 2011, true)
 
 estoque = Estoque.new
 estoque.adiciona livro_ruby
