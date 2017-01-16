@@ -8,9 +8,5 @@ class Ebook
     ['ebook', 'digital'].include?(query)
   end
 
-  def possui_reimpressao?
-    @possui_reimpressao
-  end
-
 end
 

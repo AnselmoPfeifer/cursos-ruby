@@ -1,8 +1,10 @@
 require_relative 'produto'
+require_relative 'impresso'
 
 class Livro
 
   include Produto
+  include Impressao
 
   def initialize(titulo, preco, ano_lancamento, possui_reimpressao, editora, possui_sobrecapa)
     super(titulo, preco, ano_lancamento, editora)
