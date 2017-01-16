@@ -1,20 +1,19 @@
 # Curso Orientação a Objetos: Melhores técnicas com Ruby
+-   Revisitando a Orientação a Objetos
 
-    Revisitando a Orientação a Objetos
+-   Modelos anêmicos e encapsulamento
 
-    Modelos anêmicos e encapsulamento
+-   Responsabilidades e coesão dos objetos
 
-    Responsabilidades e coesão dos objetos
+-   Enxugando seu código
 
-    Enxugando seu código
+-   Generalizando comportamentos através do method_missing
 
-    Generalizando comportamentos através do method_missing
+-   Extraindo comportamento e duck typing
 
-    Extraindo comportamento e duck typing
+-   Herdando comportamento através de mixins e polimorfismo
 
-    Herdando comportamento através de mixins e polimorfismo
-
-    Composição, herança e os cuidados com mixins
+-   Composição, herança e os cuidados com mixins
 
 
 LINKS: 
